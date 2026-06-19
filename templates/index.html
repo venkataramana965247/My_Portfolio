@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Portfolio</title>
+
+    <!-- Your CSS file -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    
+    <!-- Font Awesome Icons (ADD THIS BELOW CSS) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<!-- ================= NAVBAR ================= -->
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+
+    <button onclick="toggleDarkMode()" class="mode-btn">
+        🌙 Mode
+    </button>
+
+</nav>
+
+<!-- ================= HERO SECTION ================= -->
+
+<div class="hero">
+
+    <div class="hero-left">
+
+        <h1>Hi, I'm K. Venkata Ramana</h1>
+
+        <h2>Data Science | Python Developer</h2>
+
+        <p>
+            Passionate about building real-world projects in Data Science,
+            Web Development, and Python-based applications.
+        </p>
+
+        <div class="hero-buttons">
+            <button>Hire Me</button>
+            <button>Download Resume</button>
+        </div>
+
+        <!-- Social Icons -->
+<div class="social-icons">
+
+    <a href="https://www.linkedin.com/in/venkata-ramana-kadumula410" target="_blank">
+        <i class="fa-brands fa-linkedin"></i>
+    </a>
+
+    <a href="https://github.com/venkataramana965247" target="_blank">
+        <i class="fa-brands fa-github"></i>
+    </a>
+
+    <!-- Twitter (X) -->
+    <a href="https://x.com/RKadumula35358" target="_blank">
+        <i class="fa-brands fa-x-twitter"></i>
+    </a>
+
+    <!-- Instagram -->
+    <a href="https://www.instagram.com/call_me_ramana72?igsh=MWJmajJrYXlveWpibw==" target="_blank">
+        <i class="fa-brands fa-instagram"></i>
+    </a>
+
+    <!-- Facebook -->
+    <a href="https://www.facebook.com/VenkataRamana.Kadumula.KVR" target="_blank">
+        <i class="fa-brands fa-facebook"></i>
+    </a>
+
+</div>
+
+    </div>
+
+    <div class="hero-right">
+
+        <img src="{{ url_for('static', filename='images/profile.jpg') }}" class="profile-pic">
+
+    </div>
+
+</div>
+
+<!-- ================= ABOUT SECTION ================= -->
+
+<div class="about" id="about">
+
+    <h2>About Me</h2>
+
+    <div class="about-container">
+
+        <!-- LEFT SIDE -->
+        <div class="about-left">
+
+            <p>
+                I am K. Venkata Ramana, 
+                interested in Data Science, Python Development.
+                I enjoy building real-world projects and improving my problem-solving skills.
+            </p>
+
+            <p>
+                My goal is to become a Software Engineer
+                and contribute to impactful projects.
+            </p>
+
+            <div class="about-buttons">
+                <button>Download Resume</button>
+                <button>Contact Me</button>
+            </div>
+
+        </div>
+
+        <!-- RIGHT SIDE -->
+        <div class="about-right">
+
+            <div class="skill-card">
+                <i class="fa-solid fa-code"></i>
+                <h3>Python</h3>
+            </div>
+
+            <div class="skill-card">
+                <i class="fa-solid fa-database"></i>
+                <h3>SQL</h3>
+            </div>
+
+            <div class="skill-card">
+                <i class="fa-solid fa-chart-line"></i>
+                <h3>Data Science</h3>
+            </div>
+
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- ================= SKILLS SECTION ================= -->
+
+<div id="skills" class="section">
+
+    <h2>Skills</h2>
+
+    <ul class="skills-list">
+
+        <li><b>Languages:</b> Python</li>
+
+        <li><b>Application Software:</b> MS Excel, MS Word, MS PowerPoint</li>
+
+        <li><b>Database:</b> SQL</li>
+
+        <li><b>Tools:</b> GitHub, VS Code, Jupyter Notebook</li>
+
+        <li><b>Soft Skills:</b> Problem Solving, Teamwork, Quick Learner, Communication</li>
+
+    </ul>
+
+</div>
+
+</body>
+</html>
+
+<!-- ================= PROJECTS SECTION ================= -->
+
+<div id="projects" class="section">
+
+    <h2>My Projects</h2>
+
+    <div class="project-container">
+
+        <!-- PROJECT 1 -->
+        <div class="project-card">
+            <i class="fa-solid fa-wind icon"></i>
+            <h3>IoT Air Pollution Monitoring System</h3>
+            <p>
+                Built an IoT system using MQ gas sensors to detect harmful gases in the environment.
+                GSM module sends real-time alerts when pollution exceeds safe levels.
+            </p>
+            <p><b>Skills:</b> IoT, Arduino, GSM Module</p>
+        </div>
+
+        <!-- PROJECT 2 -->
+        <div class="project-card">
+            <i class="fa-solid fa-database icon"></i>
+            <h3>Student Database Management System</h3>
+            <p>
+                Designed a MySQL database system to manage student records like marks, roll number, and grades.
+            </p>
+            <p><b>Skills:</b> SQL, MySQL</p>
+        </div>
+
+        <!-- PROJECT 3 -->
+        <div class="project-card">
+            <i class="fa-solid fa-calculator icon"></i>
+            <h3>Python Tkinter Calculator</h3>
+            <p>
+                Developed a GUI calculator using Python Tkinter with basic arithmetic operations.
+            </p>
+            <p><b>Skills:</b> Python, Tkinter</p>
+        </div>
+
+    </div>
+</div>
+
+<!-- ================= CONTACT SECTION ================= -->
+
+<div id="contact" class="section">
+
+    <h2>Contact Me</h2>
+
+    <p class="contact-msg">
+        I am actively looking for opportunities in Software Development, Data Science, and IT roles.
+        Feel free to connect with me for collaboration or job opportunities.
+    </p>
+
+    <div class="contact-container">
+
+        <!-- Email -->
+        <div class="contact-card">
+            <i class="fa-solid fa-envelope icon"></i>
+            <div>
+                <h3>Email</h3>
+                <p>ramanakadumula72@gmail.com</p>
+            </div>
+        </div>
+
+        <!-- Phone -->
+        <div class="contact-card">
+            <i class="fa-solid fa-phone icon"></i>
+            <div>
+                <h3>Phone</h3>
+                <p>9652474480</p>
+            </div>
+        </div>
+
+        <!-- LinkedIn -->
+        <div class="contact-card">
+            <i class="fa-brands fa-linkedin icon"></i>
+            <div>
+                <h3>LinkedIn</h3>
+                <p>
+                    <a href="https://www.linkedin.com/in/venkata-ramana-kadumula410" target="_blank">
+                        View Profile
+                    </a>
+                </p>
+            </div>
+        </div>
+
+        <!-- GitHub -->
+        <div class="contact-card">
+            <i class="fa-brands fa-github icon"></i>
+            <div>
+                <h3>GitHub</h3>
+                <p>
+                    <a href="https://github.com/venkataramana965247" target="_blank">
+                        View Projects
+                    </a>
+                </p>
+            </div>
+        </div>
+
+        <!-- Location -->
+        <div class="contact-card">
+            <i class="fa-solid fa-location-dot icon"></i>
+            <div>
+                <h3>Location</h3>
+                <p>Bhimavaram, Andhra Pradesh</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+    <p>© 2026 K. Venkata Ramana | Built with Flask & Python</p>
+</footer>
+
+<!-- ✅ ADD THIS LINE (VERY IMPORTANT) -->
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
