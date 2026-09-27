@@ -216,9 +216,20 @@ button:hover {
 
 .skills-list li {
     background: #1e293b;
-    padding: 10px;
+    padding: 14px 18px;
     margin: 10px 0;
-    border-radius: 8px;
+    border-radius: 10px;
+    border-left: 4px solid #00bcd4;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skills-list li:hover {
+    transform: translateX(6px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+}
+
+.skills-list li b {
+    margin-right: 5px;
 }
 
 /* =========================
@@ -500,3 +511,68 @@ body.dark .skill-card {
     transform: translateY(0);
 }
 
+/* ================= PROJECT CARD IMPROVEMENTS ================= */
+
+.project-card {
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+}
+
+.project-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    display: block;
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        padding: 60px 20px;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .about,
+    .skills,
+    .projects,
+    .contact {
+        padding: 50px 20px;
+    }
+
+    .projects-container {
+        grid-template-columns: 1fr;
+    }
+
+    .project-card {
+        width: 100%;
+    }
+
+    .project-image {
+        height: 200px;
+    }
+}

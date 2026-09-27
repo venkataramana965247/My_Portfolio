@@ -1,15 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>My Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Your CSS file -->
+    <title>K. Venkata Ramana | Data Analyst Portfolio</title>
+
+    <!-- CSS -->
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-    
-    <!-- Font Awesome Icons (ADD THIS BELOW CSS) -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+
+<body>
 
 <!-- ================= NAVBAR ================= -->
 
@@ -23,8 +29,8 @@
     <button onclick="toggleDarkMode()" class="mode-btn">
         🌙 Mode
     </button>
-
 </nav>
+
 
 <!-- ================= HERO SECTION ================= -->
 
@@ -34,55 +40,73 @@
 
         <h1>Hi, I'm K. Venkata Ramana</h1>
 
-        <h2>Data Science | Python Developer</h2>
+        <h2>Data Analyst | Python | SQL | Power BI | Excel</h2>
 
         <p>
-            Passionate about building real-world projects in Data Science,
-            Web Development, and Python-based applications.
+            B.Tech Graduate (2026) in Electronics and Communication Engineering,
+            passionate about data analysis, Python, SQL, Power BI, and Excel.
+            I enjoy transforming data into meaningful insights and building
+            practical projects.
         </p>
 
         <div class="hero-buttons">
-            <button>Hire Me</button>
-            <button>Download Resume</button>
+
+            <a href="#contact">
+                Hire Me
+            </a>
+
+            <a href="{{ url_for('static', filename='Resume_KVR.pdf') }}"
+               download="Resume_KVR.pdf">
+                Download Resume
+            </a>
+
         </div>
 
+
         <!-- Social Icons -->
-<div class="social-icons">
 
-    <a href="https://www.linkedin.com/in/venkata-ramana-kadumula410" target="_blank">
-        <i class="fa-brands fa-linkedin"></i>
-    </a>
+        <div class="social-icons">
 
-    <a href="https://github.com/venkataramana965247" target="_blank">
-        <i class="fa-brands fa-github"></i>
-    </a>
+            <a href="https://www.linkedin.com/in/venkata-ramana-kadumula410"
+               target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
 
-    <!-- Twitter (X) -->
-    <a href="https://x.com/RKadumula35358" target="_blank">
-        <i class="fa-brands fa-x-twitter"></i>
-    </a>
+            <a href="https://github.com/venkataramana965247"
+               target="_blank">
+                <i class="fa-brands fa-github"></i>
+            </a>
 
-    <!-- Instagram -->
-    <a href="https://www.instagram.com/call_me_ramana72?igsh=MWJmajJrYXlveWpibw==" target="_blank">
-        <i class="fa-brands fa-instagram"></i>
-    </a>
+            <a href="https://x.com/RKadumula35358"
+               target="_blank">
+                <i class="fa-brands fa-x-twitter"></i>
+            </a>
 
-    <!-- Facebook -->
-    <a href="https://www.facebook.com/VenkataRamana.Kadumula.KVR" target="_blank">
-        <i class="fa-brands fa-facebook"></i>
-    </a>
+            <a href="https://www.instagram.com/call_me_ramana72"
+               target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
 
-</div>
+            <a href="https://www.facebook.com/VenkataRamana.Kadumula.KVR"
+               target="_blank">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+
+        </div>
 
     </div>
+
 
     <div class="hero-right">
 
-        <img src="{{ url_for('static', filename='images/profile.jpg') }}" class="profile-pic">
+        <img src="{{ url_for('static', filename='images/profile.jpg') }}"
+             class="profile-pic"
+             alt="K. Venkata Ramana">
 
     </div>
 
 </div>
+
 
 <!-- ================= ABOUT SECTION ================= -->
 
@@ -92,32 +116,41 @@
 
     <div class="about-container">
 
-        <!-- LEFT SIDE -->
         <div class="about-left">
 
             <p>
-                I am K. Venkata Ramana, 
-                interested in Data Science, Python Development.
-                I enjoy building real-world projects and improving my problem-solving skills.
+                I am K. Venkata Ramana, a B.Tech Graduate (2026) in
+                Electronics and Communication Engineering. I have practical
+                knowledge of Python, SQL, Excel, Power BI, Pandas, and NumPy.
             </p>
 
             <p>
-                My goal is to become a Software Engineer
-                and contribute to impactful projects.
+                I enjoy working with data, creating dashboards, analyzing
+                business problems, and developing practical applications.
+                I am currently looking for entry-level opportunities in
+                Data Analytics, IT, and related technology roles.
             </p>
 
             <div class="about-buttons">
-                <button>Download Resume</button>
-                <button>Contact Me</button>
+
+                <a href="{{ url_for('static', filename='Resume_KVR.pdf') }}"
+                   download="Resume_KVR.pdf">
+                    Download Resume
+                </a>
+
+                <a href="#contact">
+                    Contact Me
+                </a>
+
             </div>
 
         </div>
 
-        <!-- RIGHT SIDE -->
+
         <div class="about-right">
 
             <div class="skill-card">
-                <i class="fa-solid fa-code"></i>
+                <i class="fa-brands fa-python"></i>
                 <h3>Python</h3>
             </div>
 
@@ -128,15 +161,20 @@
 
             <div class="skill-card">
                 <i class="fa-solid fa-chart-line"></i>
-                <h3>Data Science</h3>
+                <h3>Power BI</h3>
             </div>
 
+            <div class="skill-card">
+                <i class="fa-solid fa-file-excel"></i>
+                <h3>Excel</h3>
+            </div>
 
         </div>
 
     </div>
 
 </div>
+
 
 <!-- ================= SKILLS SECTION ================= -->
 
@@ -146,22 +184,50 @@
 
     <ul class="skills-list">
 
-        <li><b>Languages:</b> Python</li>
+        <li>
+            <b>Programming:</b>
+            Python
+        </li>
 
-        <li><b>Application Software:</b> MS Excel, MS Word, MS PowerPoint</li>
+        <li>
+            <b>Data Analysis:</b>
+            NumPy, Pandas, Matplotlib, Seaborn
+        </li>
 
-        <li><b>Database:</b> SQL</li>
+        <li>
+            <b>Database:</b>
+            SQL, Oracle SQL
+        </li>
 
-        <li><b>Tools:</b> GitHub, VS Code, Jupyter Notebook</li>
+        <li>
+            <b>Business Intelligence:</b>
+            Power BI, DAX
+        </li>
 
-        <li><b>Soft Skills:</b> Problem Solving, Teamwork, Quick Learner, Communication</li>
+        <li>
+            <b>Excel:</b>
+            Pivot Tables, Pivot Charts, Data Analysis
+        </li>
+
+        <li>
+            <b>Office:</b>
+            MS Word, MS PowerPoint
+        </li>
+
+        <li>
+            <b>Tools:</b>
+            GitHub, VS Code, Jupyter Notebook
+        </li>
+
+        <li>
+            <b>Soft Skills:</b>
+            Problem Solving, Teamwork, Communication, Quick Learner
+        </li>
 
     </ul>
 
 </div>
 
-</body>
-</html>
 
 <!-- ================= PROJECTS SECTION ================= -->
 
@@ -171,39 +237,171 @@
 
     <div class="project-container">
 
+
         <!-- PROJECT 1 -->
+
         <div class="project-card">
-            <i class="fa-solid fa-wind icon"></i>
-            <h3>IoT Air Pollution Monitoring System</h3>
+
+            <img src="{{ url_for('static', filename='images/powerbi-dashboard.png') }}"
+                 alt="Global E-Commerce Sales Power BI Dashboard"
+                 class="project-image">
+
+            <i class="fa-solid fa-chart-line icon"></i>
+
+            <h3>
+                Global E-Commerce Sales Power BI Dashboard
+            </h3>
+
             <p>
-                Built an IoT system using MQ gas sensors to detect harmful gases in the environment.
-                GSM module sends real-time alerts when pollution exceeds safe levels.
+                Developed an interactive Power BI dashboard to analyze
+                e-commerce sales, profit, products, customers, regions,
+                and overall business performance using interactive
+                visualizations and KPIs.
             </p>
-            <p><b>Skills:</b> IoT, Arduino, GSM Module</p>
+
+            <p>
+                <b>Skills:</b>
+                Power BI, DAX, Excel, Data Visualization
+            </p>
+
+            <a href="https://github.com/venkataramana965247"
+               target="_blank">
+                <i class="fa-brands fa-github"></i>
+                GitHub
+            </a>
+
         </div>
+
 
         <!-- PROJECT 2 -->
+
         <div class="project-card">
-            <i class="fa-solid fa-database icon"></i>
-            <h3>Student Database Management System</h3>
+
+            <img src="{{ url_for('static', filename='images/retail-sales-Performance-dashboard.png') }}"
+                 alt="Retail Sales Performance Dashboard"
+                 class="project-image">
+
+            <i class="fa-solid fa-chart-column icon"></i>
+
+            <h3>
+                Retail Sales Performance Dashboard
+            </h3>
+
             <p>
-                Designed a MySQL database system to manage student records like marks, roll number, and grades.
+                Created an Excel-based dashboard to analyze retail sales,
+                profit, profit percentage, and business performance using
+                Pivot Tables, Pivot Charts, and interactive analysis.
             </p>
-            <p><b>Skills:</b> SQL, MySQL</p>
+
+            <p>
+                <b>Skills:</b>
+                Excel, Pivot Tables, Pivot Charts, Data Analysis
+            </p>
+
+            <a href="https://github.com/venkataramana965247/NXT-SYNC"
+               target="_blank">
+                <i class="fa-brands fa-github"></i>
+                GitHub
+            </a>
+
         </div>
 
+
         <!-- PROJECT 3 -->
+
         <div class="project-card">
-            <i class="fa-solid fa-calculator icon"></i>
-            <h3>Python Tkinter Calculator</h3>
+
+            <img src="{{ url_for('static', filename='images/SQL_Retail_Sales_Projects.png') }}"
+                 alt="SQL Retail Sales Analysis"
+                 class="project-image">
+
+            <i class="fa-solid fa-database icon"></i>
+
+            <h3>
+                SQL Retail Sales Analysis
+            </h3>
+
             <p>
-                Developed a GUI calculator using Python Tkinter with basic arithmetic operations.
+                Analyzed retail sales data using SQL queries to extract
+                meaningful business insights, including sales trends,
+                customer analysis, product performance, and revenue
+                analysis.
             </p>
-            <p><b>Skills:</b> Python, Tkinter</p>
+
+            <p>
+                <b>Skills:</b>
+                SQL, Oracle SQL, Data Analysis
+            </p>
+
+            <a href="https://github.com/venkataramana965247/SQL_Retail_Sales_Project"
+               target="_blank">
+                <i class="fa-brands fa-github"></i>
+                GitHub
+            </a>
+
+        </div>
+
+
+        <!-- PROJECT 4 -->
+
+        <div class="project-card">
+
+            <img src="{{ url_for('static', filename='images/iot-air-pollution.png') }}"
+                 alt="IoT Air Pollution Monitoring System"
+                 class="project-image">
+
+            <i class="fa-solid fa-wind icon"></i>
+
+            <h3>
+                IoT Air Pollution Monitoring System
+            </h3>
+
+            <p>
+                Developed an IoT-based air pollution monitoring system
+                using environmental sensors. The system monitors pollution
+                levels and uses a GSM module to send SMS alerts when
+                pollution increases.
+            </p>
+
+            <p>
+                <b>Skills:</b>
+                Arduino UNO, MQ-9, PM2.5, DHT11, GSM
+            </p>
+
+        </div>
+
+
+        <!-- PROJECT 5 -->
+
+        <div class="project-card">
+
+            <img src="{{ url_for('static', filename='images/python-calculator.png') }}"
+                 alt="Python Tkinter Calculator"
+                 class="project-image">
+
+            <i class="fa-solid fa-calculator icon"></i>
+
+            <h3>
+                Python Tkinter Calculator
+            </h3>
+
+            <p>
+                Developed a desktop calculator application using Python
+                Tkinter with a graphical user interface and basic
+                arithmetic operations.
+            </p>
+
+            <p>
+                <b>Skills:</b>
+                Python, Tkinter, GUI Development
+            </p>
+
         </div>
 
     </div>
+
 </div>
+
 
 <!-- ================= CONTACT SECTION ================= -->
 
@@ -212,75 +410,116 @@
     <h2>Contact Me</h2>
 
     <p class="contact-msg">
-        I am actively looking for opportunities in Software Development, Data Science, and IT roles.
-        Feel free to connect with me for collaboration or job opportunities.
+        I am actively looking for entry-level opportunities in
+        Data Analytics, Python, SQL, Power BI, Excel, and IT roles.
+        Feel free to connect with me for professional opportunities
+        or collaboration.
     </p>
 
     <div class="contact-container">
 
-        <!-- Email -->
         <div class="contact-card">
+
             <i class="fa-solid fa-envelope icon"></i>
+
             <div>
                 <h3>Email</h3>
-                <p>ramanakadumula72@gmail.com</p>
+
+                <p>
+                    <a href="mailto:ramanakadumula72@gmail.com">
+                        ramanakadumula72@gmail.com
+                    </a>
+                </p>
             </div>
+
         </div>
 
-        <!-- Phone -->
+
         <div class="contact-card">
+
             <i class="fa-solid fa-phone icon"></i>
+
             <div>
                 <h3>Phone</h3>
-                <p>9652474480</p>
+
+                <p>
+                    <a href="tel:9652474480">
+                        9652474480
+                    </a>
+                </p>
             </div>
+
         </div>
 
-        <!-- LinkedIn -->
+
         <div class="contact-card">
+
             <i class="fa-brands fa-linkedin icon"></i>
+
             <div>
                 <h3>LinkedIn</h3>
+
                 <p>
-                    <a href="https://www.linkedin.com/in/venkata-ramana-kadumula410" target="_blank">
+                    <a href="https://www.linkedin.com/in/venkata-ramana-kadumula410"
+                       target="_blank">
                         View Profile
                     </a>
                 </p>
             </div>
+
         </div>
 
-        <!-- GitHub -->
+
         <div class="contact-card">
+
             <i class="fa-brands fa-github icon"></i>
+
             <div>
                 <h3>GitHub</h3>
+
                 <p>
-                    <a href="https://github.com/venkataramana965247" target="_blank">
+                    <a href="https://github.com/venkataramana965247"
+                       target="_blank">
                         View Projects
                     </a>
                 </p>
             </div>
+
         </div>
 
-        <!-- Location -->
+
         <div class="contact-card">
+
             <i class="fa-solid fa-location-dot icon"></i>
+
             <div>
                 <h3>Location</h3>
-                <p>Bhimavaram, Andhra Pradesh</p>
+
+                <p>
+                    Hyderabad, Telangana
+                </p>
             </div>
+
         </div>
 
     </div>
+
 </div>
+
 
 <!-- ================= FOOTER ================= -->
 
 <footer class="footer">
-    <p>© 2026 K. Venkata Ramana | Built with Flask & Python</p>
+
+    <p>
+        © 2026 K. Venkata Ramana | Built with Flask & Python
+    </p>
+
 </footer>
 
-<!-- ✅ ADD THIS LINE (VERY IMPORTANT) -->
+
+<!-- JavaScript -->
+
 <script src="{{ url_for('static', filename='script.js') }}"></script>
 
 </body>
